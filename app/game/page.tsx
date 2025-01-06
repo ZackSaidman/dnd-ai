@@ -46,15 +46,17 @@ export default function Game() {
 
       setInputMessage('');
       setIsLoading(true);
+      
+      const message = inputMessage;
 
       try {
         // Call the Lambda function through the API route
-        const response = await fetch('/game/api/call-dm', {
+        const response = await fetch('/api/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(playerMessage),
+          body: JSON.stringify({ message }),
         });
         console.log(response)
 
