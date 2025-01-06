@@ -24,9 +24,9 @@ export default function Home() {
       </h2>
 
       <div className={styles.buttonContainer}>
-        <button className={styles.button} onClick={() => handleStartGame('Claude')}>
+        {/* <button className={styles.button} onClick={() => handleStartGame('Claude')}>
           DM Claude
-        </button>
+        </button> */}
         <button className={styles.button} onClick={() => handleStartGame('ChatGPT')}>
           DM ChatGPT
         </button>

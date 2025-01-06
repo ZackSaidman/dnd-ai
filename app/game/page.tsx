@@ -32,7 +32,8 @@ export default function Game() {
   }, [searchParams]);
 
   const switchDm = () => {
-    const newDm = dm === 'Claude' ? 'ChatGPT' : 'Claude';
+    // const newDm = dm === 'Claude' ? 'ChatGPT' : 'Claude';
+    const newDm = 'ChatGPT'
     setDm(newDm);
     router.push(`/game?dm=${newDm}`);
   };
